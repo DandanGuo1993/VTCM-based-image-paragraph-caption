@@ -33,3 +33,20 @@ https://github.com/lukemelas/image-paragraph-captioning
 ##Train just run the following command: python train.py --batch_size 20 --epochs 500 --pretrain_topic_model --features_path your_features_path --annotation_folder your_annotation_folder --save_path your_save_path --logs_folder your_logs_save_path
 
 ##Customize your own dataset VCTM-Transformer can be trained on any image-caption datasets. You just need to preprocess the datasets refer to our datasets.
+
+
+If you find this repo useful to your project, please cite it with following bib:
+
+@article{guo2022matching,
+  title={Matching Visual Features to Hierarchical Semantic Topics for Image Paragraph Captioning},
+  author={Guo, Dandan and Lu, Ruiying and Chen, Bo and Zeng, Zequn and Zhou, Mingyuan},
+  journal={International Journal of Computer Vision},
+  pages={1--18},
+  year={2022},
+  url={https://link.springer.com/article/10.1007/s11263-022-01624-6},
+  pdf={https://arxiv.org/pdf/2105.04143.pdf},
+  url_arxiv={https://arxiv.org/abs/2105.04143},
+  Note = {(the first two authors contributed equally)},
+  publisher={Springer}
+}
+
