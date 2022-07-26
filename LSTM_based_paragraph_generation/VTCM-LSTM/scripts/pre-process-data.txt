@@ -1,0 +1,25 @@
+This file is used to preprocess the data for training VTCM-LSTM and VTCM-Transformer, including the visual features and textual descriptions ( sequential paragraph for LSTM or Transformer and bag of words vectors for VTCM).
+
+###################################################How to preprocess captions #################################################################
+	(1) you need to download the original captions following the 'download.sh' in the './data/captions'.
+	(2) running './scripts/prepro_captions.py', you can obtain the data for evaluating the proformance of generated captions into the file './annotations/'.
+	(3) running './scripts/prepro_text.py', you can produce the 'para_karpathy_format_new.json' into the file './data/captions/' .
+	(4) running './scripts/my_prepro_one_hot.py', you can produce the textual descriptions ( sequential paragraph for LSTM or Transformer and bag of words vectors for VTCM) into the file './data/' .
+
+
+
+###################################################How to obtain the 4096-dimensional visual features of images #################################################################
+Download the raw images in the Standford image paragraph dataset from the Visual Genome website  [  https://cs.stanford.edu/people/ranjaykrishna/im2p/index.html  ].
+
+You can download a pretrained DenseCap model by following the script from [ https://github.com/jcjohnson/densecap  ]
+And you can extract the visual features of images with the pretrained DenseCap following the [ https://github.com/jcjohnson/densecap ] to generate the HDF5 files into the file './data/feature_from_dense_cap/'
+Running './scripts/make_dense_caption_feature.py' you can obtain the three files ('./data/densecaption_fc/','./data/densecaption_box/','./data/densecaption_att/' ) including the visual features and bounding boxes.
+
+
+
+
+
+
+
+
+
